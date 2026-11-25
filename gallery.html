@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of the Pearl &amp; Co. Dental clinic, our team and happy patients in Colombo 06.">
+  <title>Gallery – Pearl &amp; Co. Dental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Mon – Sat • 9am – 6pm • 34 Galle Road, Colombo 06</span>
+      <span class="hot">
+        <a href="tel:+94110470471">Call +94 11 047 0471</a>
+        <a class="em" href="services.html#booking">Emergency same-day slots</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="40" height="40">
+        Pearl &amp; Co. Dental
+      </a>
+      <input class="toggle" type="checkbox" id="navcheck" aria-label="Toggle navigation menu">
+      <label class="hamburger" for="navcheck" aria-hidden="true">☰</label>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li class="nav-cta"><a href="services.html#booking">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Gallery</h1>
+    </div>
+  </section>
+
+  <main id="main" class="wrap section">
+    <p>Take a look inside our clinic, meet the team and see healthy smiles.</p>
+
+    <!-- The radio buttons must stay directly before .filters and .gallery: the CSS filter relies on this order -->
+    <input class="toggle" type="radio" name="gf" id="f-all" checked>
+    <input class="toggle" type="radio" name="gf" id="f-clinic">
+    <input class="toggle" type="radio" name="gf" id="f-team">
+    <input class="toggle" type="radio" name="gf" id="f-patients">
+
+    <div class="filters" role="group" aria-label="Filter gallery">
+      <label for="f-all">All</label>
+      <label for="f-clinic">Clinic</label>
+      <label for="f-team">Team</label>
+      <label for="f-patients">Patients</label>
+    </div>
+
+    <div class="gallery">
+      <figure class="g-item" data-cat="clinic">
+        <img src="images/fonseka-patient.png" alt="Dentist gently treating a patient" loading="lazy" width="800" height="600">
+        <figcaption>Clinic • Gentle care in action</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="clinic">
+        <img src="images/orth.png" alt="Dentist showing a digital 3D scan of teeth on a screen" loading="lazy" width="800" height="600">
+        <figcaption>Clinic • Modern equipment</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="clinic">
+        <img src="images/sliva_with_p.png" alt="Dentist examining a patient in a bright treatment room" loading="lazy" width="800" height="600">
+        <figcaption>Clinic • Treatment room</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="team">
+        <img src="images/sliva.png" alt="Dr. Silva, general dentist, standing with arms crossed in the clinic" loading="lazy" width="800" height="600">
+        <figcaption>Team • Dr. Silva, General</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="team">
+        <img src="images/fon.png" alt="Dr. Fonseka, cosmetic dentist, smiling in a white coat" loading="lazy" width="800" height="600">
+        <figcaption>Team • Dr. Fonseka, Cosmetic</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="team">
+        <img src="images/perea.png" alt="Dr. Perera, orthodontist, smiling in the clinic" loading="lazy" width="800" height="600">
+        <figcaption>Team • Dr. Perera, Orthodontics</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="patients">
+        <img src="images/happy.png" alt="Happy patient with a healthy, bright smile" loading="lazy" width="800" height="600">
+        <figcaption>Patients • Healthy smile</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="patients">
+        <img src="images/general.png" alt="Dentist laughing with a relaxed patient" loading="lazy" width="800" height="600">
+        <figcaption>Patients • Relaxed visits</figcaption>
+      </figure>
+      <figure class="g-item" data-cat="patients">
+        <img src="images/frd.png" alt="Friendly dentist fist-bumping a young patient" loading="lazy" width="800" height="600">
+        <figcaption>Patients • Child-friendly first visits</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <a class="f-brand" href="index.html">
+          <img src="images/logo.png" alt="" width="40" height="40">
+          Pearl &amp; Co. Dental
+        </a>
+        <p class="f-tag">A calm, modern boutique dental clinic in Colombo 06. Gentle care for busy professionals, families and first-time patients.</p>
+        <!-- Placeholder icons: replace with real links when social pages exist -->
+        <div class="f-social" aria-hidden="true"><span>f</span><span>ig</span><span>in</span><span>wa</span></div>
+      </div>
+      <nav aria-label="Explore">
+        <h2 class="f-head">Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; Doctors</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Treatments">
+        <h2 class="f-head">Treatments</h2>
+        <ul>
+          <li><a href="services.html">General Dentistry</a></li>
+          <li><a href="services.html">Cosmetic &amp; Whitening</a></li>
+          <li><a href="services.html">Orthodontics</a></li>
+          <li><a href="services.html#booking">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="f-head">Visit Us</h2>
+        <ul>
+          <li>34 Galle Road, Colombo 06</li>
+          <li><a href="tel:+94110470471">+94 11 047 0471</a></li>
+          <li><a href="mailto:hello@pearlandco.lk">hello@pearlandco.lk</a></li>
+          <li>Mon – Sat • 9am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap f-bottom-in">
+        <span>© 2026 Pearl &amp; Co. Dental</span>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

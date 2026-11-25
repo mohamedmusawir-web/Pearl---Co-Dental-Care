@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="General, cosmetic, orthodontic and emergency dental services, doctor schedule and online booking at Pearl &amp; Co. Dental.">
+  <title>Services &amp; Booking – Pearl &amp; Co. Dental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Mon – Sat • 9am – 6pm • 34 Galle Road, Colombo 06</span>
+      <span class="hot">
+        <a href="tel:+94110470471">Call +94 11 047 0471</a>
+        <a class="em" href="services.html#booking">Emergency same-day slots</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="40" height="40">
+        Pearl &amp; Co. Dental
+      </a>
+      <input class="toggle" type="checkbox" id="navcheck" aria-label="Toggle navigation menu">
+      <label class="hamburger" for="navcheck" aria-hidden="true">☰</label>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="nav-cta"><a href="services.html#booking">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Our Services</h1>
+    </div>
+  </section>
+
+  <main id="main" class="wrap section">
+    <img class="banner" src="images/fonseka-patient.png" alt="Dentist treating a patient in a modern treatment room" width="1100" height="400">
+
+    <h2 class="sr-only">Treatments we offer</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/general.png" alt="General dental check-up and cleaning" loading="lazy" width="600" height="400">
+        <h3>General</h3>
+        <p>Exams, scaling &amp; polish, fillings, extractions, kids check-ups.</p>
+      </article>
+      <article class="card">
+        <img src="images/happy.png" alt="Bright cosmetic smile after whitening" loading="lazy" width="600" height="400">
+        <h3>Cosmetic</h3>
+        <p>Whitening, veneers, bonding, smile makeovers.</p>
+      </article>
+      <article class="card">
+        <img src="images/orth.png" alt="Orthodontic treatment room" loading="lazy" width="600" height="400">
+        <h3>Orthodontics</h3>
+        <p>Braces, clear aligners, retainers for teens &amp; adults.</p>
+      </article>
+      <article class="card">
+        <img src="images/sliva_with_p.png" alt="Dentist giving same-day emergency care" loading="lazy" width="600" height="400">
+        <h3>Emergency</h3>
+        <p>Severe pain, trauma, swelling. Same-day triage.</p>
+      </article>
+    </div>
+
+    <h2 id="doctors" class="section-title">Doctors and schedule</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Doctor availability</caption>
+        <thead>
+          <tr>
+            <th scope="col">Doctor</th>
+            <th scope="col">Specialty</th>
+            <th scope="col">Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Dr. Silva</th>
+            <td>General</td>
+            <td>Mon – Fri, 9am – 5pm</td>
+          </tr>
+          <tr>
+            <th scope="row">Dr. Fonseka</th>
+            <td>Cosmetic</td>
+            <td>Tue, Thu, 10am – 6pm</td>
+          </tr>
+          <tr>
+            <th scope="row">Dr. Perera</th>
+            <td>Orthodontics</td>
+            <td>Wed, Sat, 9am – 1pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="booking" class="section-title">Book an appointment</h2>
+    <p class="small">Completable in under 2 minutes. All fields marked * are required.</p>
+    <form action="thank-you.html" method="get">
+      <fieldset>
+        <legend>Patient details</legend>
+
+        <label for="b-name">Full name *</label>
+        <input id="b-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Kavindu Perera">
+
+        <label for="b-phone">Phone or email *</label>
+        <input id="b-phone" name="contact" type="text" autocomplete="email" required placeholder="+94 77 123 4567 or you@mail.com">
+      </fieldset>
+
+      <fieldset>
+        <legend>Appointment</legend>
+
+        <label for="b-service">Service *</label>
+        <select id="b-service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="general">General</option>
+          <option value="cosmetic">Cosmetic</option>
+          <option value="orthodontics">Orthodontics</option>
+          <option value="emergency">Emergency</option>
+        </select>
+
+        <label for="b-doc">Dentist *</label>
+        <select id="b-doc" name="dentist" required>
+          <option value="">Choose a dentist</option>
+          <option value="silva">Dr. Silva (Mon – Fri)</option>
+          <option value="fonseka">Dr. Fonseka (Tue, Thu)</option>
+          <option value="perera">Dr. Perera (Wed, Sat)</option>
+        </select>
+
+        <label for="b-date">Preferred date *</label>
+        <input id="b-date" name="date" type="date" required>
+
+        <label for="b-time">Preferred time *</label>
+        <input id="b-time" name="time" type="time" required>
+      </fieldset>
+
+      <button type="submit">Confirm booking</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <a class="f-brand" href="index.html">
+          <img src="images/logo.png" alt="" width="40" height="40">
+          Pearl &amp; Co. Dental
+        </a>
+        <p class="f-tag">A calm, modern boutique dental clinic in Colombo 06. Gentle care for busy professionals, families and first-time patients.</p>
+        <!-- Placeholder icons: replace with real links when social pages exist -->
+        <div class="f-social" aria-hidden="true"><span>f</span><span>ig</span><span>in</span><span>wa</span></div>
+      </div>
+      <nav aria-label="Explore">
+        <h2 class="f-head">Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; Doctors</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Treatments">
+        <h2 class="f-head">Treatments</h2>
+        <ul>
+          <li><a href="services.html">General Dentistry</a></li>
+          <li><a href="services.html">Cosmetic &amp; Whitening</a></li>
+          <li><a href="services.html">Orthodontics</a></li>
+          <li><a href="services.html#booking">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="f-head">Visit Us</h2>
+        <ul>
+          <li>34 Galle Road, Colombo 06</li>
+          <li><a href="tel:+94110470471">+94 11 047 0471</a></li>
+          <li><a href="mailto:hello@pearlandco.lk">hello@pearlandco.lk</a></li>
+          <li>Mon – Sat • 9am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap f-bottom-in">
+        <span>© 2026 Pearl &amp; Co. Dental</span>
+       
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

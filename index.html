@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pearl &amp; Co. Dental: boutique dental clinic in Colombo 06. General, cosmetic, orthodontic and emergency dentistry. Book online in under 2 minutes.">
+  <title>Pearl &amp; Co. Dental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Shared tooth outline, defined once and reused by every tooth layer -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="tooth-shape" d="M40 70 C40 25 80 18 100 38 C120 18 160 25 160 70 C160 95 148 102 144 128 C140 156 134 200 116 200 C104 200 106 160 100 160 C94 160 96 200 84 200 C66 200 60 156 56 128 C52 102 40 95 40 70 Z"/>
+      <linearGradient id="enamel" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset=".55" stop-color="#fdf6ec"/>
+        <stop offset="1" stop-color="#f0ddd0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Mon – Sat • 9am – 6pm • 34 Galle Road, Colombo 06</span>
+      <span class="hot">
+        <a href="tel:+94110470471">Call +94 11 047 0471</a>
+        <a class="em" href="services.html#booking">Emergency same-day slots</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" width="40" height="40">
+        Pearl &amp; Co. Dental
+      </a>
+      <input class="toggle" type="checkbox" id="navcheck" aria-label="Toggle navigation menu">
+      <label class="hamburger" for="navcheck" aria-hidden="true">☰</label>
+      <ul class="main-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="nav-cta"><a href="services.html#booking">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>A calm, modern approach to dental care</h1>
+          <p class="lead">General, cosmetic, and family dentistry in a warm, boutique setting. No cold clinic feel, just gentle care.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="services.html#booking">Book Appointment</a>
+            <a class="btn btn-outline" href="contact.html">Ask a Question</a>
+          </div>
+          <ul class="trust">
+            <li>✓ Online booking under 2 min</li>
+            <li>✓ Doctors &amp; schedule visible</li>
+            <li>✓ Child-friendly first visits</li>
+          </ul>
+        </div>
+
+        <div class="tooth-card" role="group" aria-label="Interactive 3D tooth demonstration">
+          <input class="toggle" type="checkbox" id="clean">
+          <div class="tooth-stage">
+            <div class="tooth-3d" role="img" aria-label="3D tooth that spins. Activate Clean the Tooth to remove stains.">
+              <div class="t-layer">
+                <svg viewBox="0 0 200 230" aria-hidden="true"><use href="#tooth-shape" fill="#fdfbf6" stroke="#1B2A4A" stroke-width="5"/></svg>
+              </div>
+              <div class="t-layer">
+                <svg viewBox="0 0 200 230" aria-hidden="true"><use href="#tooth-shape" fill="#fdfbf6" stroke="#1B2A4A" stroke-width="5"/></svg>
+              </div>
+              <div class="t-layer">
+                <svg viewBox="0 0 200 230" aria-hidden="true"><use href="#tooth-shape" fill="#fdfbf6" stroke="#1B2A4A" stroke-width="5"/></svg>
+              </div>
+              <div class="t-layer" aria-hidden="true">
+                <svg viewBox="0 0 200 230">
+                  <use href="#tooth-shape" fill="url(#enamel)" stroke="#1B2A4A" stroke-width="5" stroke-linejoin="round"/>
+                  <ellipse cx="72" cy="60" rx="12" ry="20" fill="#fff" opacity=".9" transform="rotate(-18 72 60)"/>
+                </svg>
+                <span class="stain s1"></span>
+                <span class="stain s2"></span>
+                <span class="stain s3"></span>
+                <span class="stain s4"></span>
+                <span class="spark p1">✦</span>
+                <span class="spark p2">✦</span>
+                <span class="spark p3">✧</span>
+                <span class="spark p4">✦</span>
+                <span class="shine"></span>
+              </div>
+              <div class="t-layer">
+                <svg viewBox="0 0 200 230" aria-hidden="true"><use href="#tooth-shape" fill="none" stroke="#E8B4B8" stroke-width="2" opacity=".6"/></svg>
+              </div>
+              <div class="t-layer">
+                <svg viewBox="0 0 200 230" aria-hidden="true"><use href="#tooth-shape" fill="none" stroke="#E8B4B8" stroke-width="1" opacity=".35"/></svg>
+              </div>
+            </div>
+          </div>
+          <label class="clean-btn" for="clean">✨ Clean the Tooth <br>Click Me</label>
+          <p class="status" aria-live="polite">
+            <span class="dirty-label">Status: Needs a Clean 🦷</span>
+            <span class="clean-label">Status: Sparkling Clean ✓</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick section">
+      <div class="wrap">
+        <h2>Quick access for patients</h2>
+        <p>Everything you need before, during and after your visit.</p>
+        <div class="tiles">
+          <a class="tile" href="services.html#booking"><strong>Book an appointment</strong><span>Choose a dentist and time in under 2 minutes.</span></a>
+          <a class="tile" href="services.html#doctors"><strong>Doctors &amp; schedule</strong><span>See who is available and when.</span></a>
+          <a class="tile" href="faq.html"><strong>First visit guide</strong><span>What to expect, insurance and children.</span></a>
+          <a class="tile" href="contact.html"><strong>Ask a question</strong><span>Send an enquiry before you book.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <h2>Our services</h2>
+      <p>General, cosmetic, orthodontic and emergency care. Pick what you need, then check live doctor availability.</p>
+      <div class="cards">
+        <article class="card">
+          <img class="card-photo" src="images/general.png" alt="Dentist examining a smiling patient with a mirror and probe" loading="lazy" width="588" height="853">
+          <h3>General</h3>
+          <p>Check-ups, cleaning, fillings, root canals &amp; kids dentistry. Gentle first visits.</p>
+          <p class="price">From LKR 3,500</p>
+        </article>
+        <article class="card">
+          <img class="card-photo" src="images/happy.png" alt="Smiling patient showing a bright, healthy smile" loading="lazy" width="594" height="853">
+          <h3>Cosmetic</h3>
+          <p>Whitening, veneers, smile design &amp; polishing in a boutique setting.</p>
+          <p class="price">From LKR 12,000</p>
+        </article>
+        <article class="card">
+          <img class="card-photo" src="images/sliva_with_p.png" alt="Dentist treating a patient in the dental chair" loading="lazy" width="632" height="853">
+          <h3>Emergency</h3>
+          <p>Toothache, chipped tooth, swelling? Same-day slots Mon – Sat.</p>
+          <p class="price"><a href="tel:+94110470471">Call +94 11 047 0471</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Clinic at a glance">
+      <div class="wrap">
+        <div><b>3</b><span>Specialist dentists</span></div>
+        <div><b>4</b><span>Treatment areas</span></div>
+        <div><b>6 days</b><span>Open Monday to Saturday</span></div>
+        <div><b>2 min</b><span>Online booking</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="split">
+        <div>
+          <h2>For busy professionals</h2>
+          <p>See which dentist is in, pick a slot and book online in under 2 minutes. No waiting on the phone.</p>
+          <a class="btn btn-primary" href="services.html#booking">Check availability</a>
+        </div>
+        <div>
+          <h2>For cautious first-timers</h2>
+          <p>Meet the team, browse our gallery, read the first-visit guide and send us a question before you book.</p>
+          <a class="btn btn-outline" href="faq.html">Read first-visit FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <h2>Inside our clinic</h2>
+      <p>Calm, modern rooms. See more in our <a href="gallery.html">gallery</a>.</p>
+      <div class="strip">
+        <img src="images/orth.png" alt="Digital dental scanner in use" loading="lazy" width="600" height="400">
+        <img src="images/fonseka-patient.png" alt="Dentist caring for a patient" loading="lazy" width="600" height="400">
+        <img src="images/frd.png" alt="Friendly Pearl &amp; Co. dentist" loading="lazy" width="600" height="400">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <a class="f-brand" href="index.html">
+          <img src="images/logo.png" alt="" width="40" height="40">
+          Pearl &amp; Co. Dental
+        </a>
+        <p class="f-tag">A calm, modern boutique dental clinic in Colombo 06. Gentle care for busy professionals, families and first-time patients.</p>
+        <!-- Placeholder icons: replace with real links when social pages exist -->
+        <div class="f-social" aria-hidden="true"><span>f</span><span>ig</span><span>in</span><span>wa</span></div>
+      </div>
+      <nav aria-label="Explore">
+        <h2 class="f-head">Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About &amp; Doctors</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Treatments">
+        <h2 class="f-head">Treatments</h2>
+        <ul>
+          <li><a href="services.html">General Dentistry</a></li>
+          <li><a href="services.html">Cosmetic &amp; Whitening</a></li>
+          <li><a href="services.html">Orthodontics</a></li>
+          <li><a href="services.html#booking">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="f-head">Visit Us</h2>
+        <ul>
+          <li>34 Galle Road, Colombo 06</li>
+          <li><a href="tel:+94110470471">+94 11 047 0471</a></li>
+          <li><a href="mailto:hello@pearlandco.lk">hello@pearlandco.lk</a></li>
+          <li>Mon – Sat • 9am – 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap f-bottom-in">
+        <span>© 2026 Pearl &amp; Co. Dental </span>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
